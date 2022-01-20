@@ -1,0 +1,237 @@
+@import 'vars';
+
+section {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   padding: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #fff;
+}
+
+header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header .logo {
+   position: relative;
+   max-width: 200px;
+}
+
+header ul {
+   position: relative;
+   display: flex;
+}
+
+header ul li {
+   list-style: none;
+}
+
+header ul li a {
+   display: inline-block;
+   color: #212529;
+   font-weight: 400;
+   margin-left: 40px;
+   text-decoration: none;
+}
+
+header ul li a:hover {
+   font-weight: 700;
+   color: #502064;
+}
+
+.content {
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.content .textBox {
+   position: relative;
+   max-width: 600px;
+}
+
+.content .textBox h2 {
+   color: #212529;
+   font-size: 3.5em;
+   line-height: 1.4em;
+   font-weight: 500;
+}
+
+.content .textBox h2 span {
+   color: #502064;
+   font-size: 1.1em;
+   font-weight: 900;
+}
+
+.content .textBox .sign-up {
+   display: inline-block;
+   margin-top: 20px;
+   padding: 12.5px 25px;
+   background-color: #E43F6F;
+   color: #fff;
+   border-radius: 40px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-decoration: none;
+   margin-right: 10px;
+}
+
+.content .textBox .sign-up:hover {
+   background-color: rgba(228, 63, 111, 0.85)
+}
+
+.content .textBox .sign-in {
+   display: inline-block;
+   margin-top: 20px;
+   padding: 12.5px 25px;
+   background-color: white;
+   border-radius: 40px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   color: #E43F6F;
+   border: 1px solid;
+   text-decoration: none;
+}
+
+.content .textBox .sign-in:hover {
+   background-color: rgba(0, 0, 0, 0.05)
+}
+
+.homeGirl {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   height: 450px;
+   max-height: 525px;
+}
+
+.thumb {
+   position: absolute;
+   left: 50%;
+   bottom: 20px;
+   transform: translateX(-50%);
+   display: flex;
+}
+
+.thumb li {
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.thumb li:hover {
+   transform: translateY(-15px);
+}
+
+.circle {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #502064;
+   clip-path: circle(600px at right 690px);
+}
+
+@media (max-width: 1085px) {
+   header {
+      padding: 20px;
+   }
+
+   header ul {
+       display: none;
+   }
+
+   section {
+      padding: 20px 20px 120px;
+   }
+
+   .content {
+      flex-direction: column;
+      margin-top: 100px;
+   }
+
+   .content .textBox h2 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+   }
+
+   .content .textBox {
+      max-width: 100%;
+      top: -135px;
+   }
+
+   .content .textBox .sign-in, .content .textBox .sign-up {
+      margin-top: 0;
+   }
+
+   .circle {
+      clip-path: circle(400px at center bottom);
+   }
+
+   .homeGirl {
+      right: auto;
+      max-height: 350px;  
+   }
+
+   .buttons {
+      display: flex;
+      justify-content: center;
+      z-index: 0;
+   }
+
+   .toggle {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background: url(../assets/icons/menu-burger.svg);
+      background-size: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 11;
+   }
+
+   .toggle.active {
+      position: fixed;
+      right: 20px;
+      background: url(../assets/icons/cross.svg);
+      background-size: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+   
+   header ul.navigation.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: white;
+      z-index: 10;
+   }
+
+   header ul li a {
+      font-size: 1.5em;
+      margin: 15px 0;
+   }
+
+}
