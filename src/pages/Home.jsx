@@ -31,8 +31,8 @@ const Home = () => {
 				<div className="textBox">
 					<h2>We found you a <span>Perfect Match!</span></h2>
 					<div className="buttons">
-						<a href="#" className="sign-up">Create account</a>
-						<a href="/sign-in" className="sign-in">Log in</a>
+						<a href="/register" className="sign-up">Create account</a>
+						<a href="/login" className="sign-in">Log in</a>
 					</div>
 				</div>
 				<img src={homeGirl} alt="homeGirl" className="homeGirl" />

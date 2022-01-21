@@ -27,16 +27,16 @@ const Login = () => {
             <form>
                <div className="input-box">
                   <span><img src={mail} className="mail" alt="" /></span>
-                  <input type="email" name="" placeholder="Email" />
+                  <input type="email" name="" placeholder="Email" required />
                </div>
                <div className="input-box">
-                  <span><img src={lock} className="lock" /></span>
+                  <span><img src={lock} className="lock" alt="" /></span>
                   <div className="show-hide" onClick={showPassword}></div>
-                  <input type="password" name="" className="pass" placeholder="Password" />
+                  <input type="password" name="" className="pass" placeholder="Password" required />
                </div>
                <a href="#" className="link-pass">Forgot password?</a>
                <input type="submit" name="" value="Login" />
-               <span className="link-reg">Not a member?<a href="#">Register now!</a> </span>
+               <span className="link-reg">Not a member?<a href="/register">Register now!</a> </span>
             </form>
          </div>
       </div>
