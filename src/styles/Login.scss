@@ -22,7 +22,7 @@
    width: 400px;
    min-height: 525px;
    background: white;
-   border: 1px solid black;
+   border: 1px solid var(--purple);
    border-radius: 25px;
    padding: 40px
 }
@@ -165,4 +165,10 @@ h2 {
    background-size: 25px;
    background-position: center;
    background-repeat: no-repeat;
+}
+
+@media (max-width: 550px) {
+   .login-box {
+      border: 0;
+   }
 }

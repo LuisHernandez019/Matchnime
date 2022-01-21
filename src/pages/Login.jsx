@@ -11,7 +11,7 @@ const Login = () => {
       var inputPass = document.querySelector('.pass')
       eyeCrossed.classList.toggle('active')
          
-      if (inputPass.type == "password")
+      if (inputPass.type === "password")
          inputPass.type = "text"
       else
          inputPass.type = "password"
@@ -19,14 +19,14 @@ const Login = () => {
 
    return (
       <div>
-         <img src={wave} className="wave-top" />
-         <img src={wave} className="wave-bottom" />
+         <img src={wave} className="wave-top" alt="" />
+         <img src={wave} className="wave-bottom" alt="" />
          <div className="login-box">
-            <a href="/"><img src={logo} className="logo" /></a>
+            <a href="/"><img src={logo} className="logo" alt="" /></a>
             <h2>Login</h2>
             <form>
                <div className="input-box">
-                  <span><img src={mail} className="mail" /></span>
+                  <span><img src={mail} className="mail" alt="" /></span>
                   <input type="email" name="" placeholder="Email" />
                </div>
                <div className="input-box">
