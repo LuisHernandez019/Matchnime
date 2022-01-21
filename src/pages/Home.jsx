@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../assets/logo_matchnime.png';
-import homeGirl from '../assets/home_girl.svg';
-import playStore from '../assets/google-play.svg';
-import appStore from '../assets/app_store.svg';
+import logo from '../assets/logos/logo_matchnime.png';
+import homeGirl from '../assets/background/home_girl.svg';
+import playStore from '../assets/background/google-play.svg';
+import appStore from '../assets/background/app_store.svg';
 import '../styles/Home.scss'
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
 		<section>
 			<div className="circle"></div>
 			<header>
-				<a href=""><img src={logo} className="logo" alt="logo" /></a>
+				<a href="/"><img src={logo} className="logo" alt="logo" /></a>
 				<div className="toggle" onClick={handleToggle}></div>
 				<ul className="navigation">
 					<li><a href="#">About</a></li>
@@ -32,7 +32,7 @@ const Home = () => {
 					<h2>We found you a <span>Perfect Match!</span></h2>
 					<div className="buttons">
 						<a href="#" className="sign-up">Create account</a>
-						<a href="#" className="sign-in">Log in</a>
+						<a href="/sign-in" className="sign-in">Log in</a>
 					</div>
 				</div>
 				<img src={homeGirl} alt="homeGirl" className="homeGirl" />

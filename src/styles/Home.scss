@@ -199,7 +199,7 @@ header ul li a:hover {
       width: 30px;
       height: 30px;
       cursor: pointer;
-      background: url(../assets/icons/menu-burger.svg);
+      background: url('../assets/icons/menu-burger.svg');
       background-size: 30px;
       background-position: center;
       background-repeat: no-repeat;
@@ -209,7 +209,7 @@ header ul li a:hover {
    .toggle.active {
       position: fixed;
       right: 20px;
-      background: url(../assets/icons/cross.svg);
+      background: url('../assets/icons/cross.svg');
       background-size: 25px;
       background-position: center;
       background-repeat: no-repeat;
