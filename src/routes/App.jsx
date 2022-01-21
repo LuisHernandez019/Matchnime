@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home'
 import Login from '../pages/Login'
+import Register from '../pages/Register'
 import '../styles/global.css'
 
 const App = () => {
@@ -9,7 +10,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={ <Home /> } />
-        <Route exact path="/sign-in" element={ <Login /> } />
+        <Route exact path="/login" element={ <Login /> } />
+        <Route exact path="/register" element={ <Register /> } />
       </Routes>
     </BrowserRouter>
   )

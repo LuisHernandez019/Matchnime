@@ -3,7 +3,7 @@ import logo from '../assets/logos/logo_matchnime.png';
 import wave from '../assets/background/wave.svg';
 import mail from '../assets/icons/mail.svg';
 import lock from '../assets/icons/lock.svg';
-import '../styles/Login.scss'
+import '../styles/Login.scss';
 
 const Login = () => {
    const showPassword = () => {

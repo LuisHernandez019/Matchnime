@@ -3,7 +3,7 @@ import logo from '../assets/logos/logo_matchnime.png';
 import homeGirl from '../assets/background/home_girl.svg';
 import playStore from '../assets/background/google-play.svg';
 import appStore from '../assets/background/app_store.svg';
-import '../styles/Home.scss'
+import '../styles/Home.scss';
 
 const Home = () => {
 	const handleToggle = () => {
