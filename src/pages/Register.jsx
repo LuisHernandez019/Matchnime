@@ -23,11 +23,12 @@ const Register = () => {
       const account = { email, name, lastName, password, preferredGender, gender, age }
 
       try {
-         axios.post(
+         await axios.post(
             "https://flink-web-test.herokuapp.com/api/v1/register",
             account
          );
          alert("Usuario registrado con éxito.");
+         window.location="/login";
       } catch {
          alert("No se ha podido registrar el usuario.");
       }

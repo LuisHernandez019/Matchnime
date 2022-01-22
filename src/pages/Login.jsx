@@ -24,6 +24,7 @@ const Login = () => {
       if (response.data) {
          setUser(response.data)
          localStorage.setItem('user', JSON.stringify(user))
+         localStorage.setItem('preferredGender', response.data.user.preferredGender)
       }
    };
 

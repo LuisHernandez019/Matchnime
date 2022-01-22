@@ -1,0 +1,121 @@
+@import 'vars';
+
+.wave-bottom {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   z-index: -10;
+}
+
+.nav-menu {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 75px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-menu .logo {
+   position: relative;
+   max-width: 200px;
+}
+
+.nav-menu .heart-arrow {
+   margin-right: 30px;
+}
+
+.section {
+   display: flex;
+   width: 100%;
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+}
+
+.profile {
+   position: absolute;
+   top: 100px;
+   width: 300px;
+   height: 375px;
+   max-height: 400px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   border-radius: 25px;
+}
+
+.profile-info {
+   position: absolute;
+   bottom: 0px;
+   color: white;
+   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(9, 9, 121, 0) 100%);
+   border-radius: 0 0 25px 25px;
+   height: 100px;
+   width: 100%;
+}
+
+.profile-info h3, .location-info {
+   position: absolute;
+   left: 20px;
+}
+
+.profile-info h3 {
+   bottom: 40px;
+   font-weight: 600;
+}
+
+.location {
+   height: 20px;
+}
+
+.location-info {
+   display: flex;
+   bottom: 15px;
+}
+
+
+h5 {
+   padding-left: 7.5px;
+   font-weight: 400;
+}
+
+.options {
+   position: fixed;
+   bottom: 75px;
+}
+
+.noup, .match {
+   max-width: 60px;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.noup:hover, .match:hover {
+   transform: translateY(-10px);
+}
+
+.noup {
+   margin-right: 30px;
+}
+
+.cards {
+   display: flex;
+   justify-content: center;
+}
+
+@media (max-width: 550px) {
+   .nav-menu {
+      padding: 20px 20px;
+   }
+
+   .nav-menu .logo {
+      padding: 0 20px;
+   }
+
+   .nav-menu .heart-arrow {
+      margin-right: 15px;
+   }
+}
