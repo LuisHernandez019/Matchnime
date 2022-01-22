@@ -29,11 +29,9 @@ const Login = () => {
 
    useEffect(() => {
       const loggedInUser = localStorage.getItem("user");
-      console.log("loggedInUser" ,loggedInUser);
 
       if (loggedInUser) {
          const foundUser = JSON.parse(loggedInUser);
-         console.log("foundUser", foundUser)
          setUser(foundUser);
       }
    }, []);
@@ -75,7 +73,7 @@ const Login = () => {
                   </div>
                   <a href="#" className="link-pass">Forgot password?</a>
                   <input type="submit" name=""
-                        value="Login" />
+                         value="Login" />
                   <span className="link-reg">Not a member?<a href="/register">Register now!</a> </span>
                </form>
             </div>

@@ -11,11 +11,9 @@ const Home = () => {
 
 	useEffect(() => {
       const loggedInUser = localStorage.getItem("user");
-      console.log("loggedInUser" ,loggedInUser);
 
       if (loggedInUser) {
          const foundUser = JSON.parse(loggedInUser);
-         console.log("foundUser", foundUser)
          setUser(foundUser);
       }
    }, []);
